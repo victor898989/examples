@@ -58,6 +58,37 @@ For more information, see the [PicoGK documentation on PicoGK.org](https://picog
 # Running PicoGK
 
 Download this example repository, open in VisualStudio Code, and run the code `Program.cs`.
+1. **ComputeThermoTask**  
+   Calcula Tad, Tg(z), Bartz hg(z), Qnorm(z).
+
+2. **ComputeThicknessTask**  
+   Calcula espesor estructural t(z) con Barlow + margen térmico.
+
+3. **TurbopumpDesignTask**  
+   Calcula r1, r2, h, U2, Cu2, ω.
+
+4. **GenerateLatticeTask**  
+   Genera lattice adaptativo:
+   - Gyroid (zonas frías)
+   - Cuasicristal (zonas calientes)
+   - Interpolación exponencial
+
+5. **Task_AssemblyFFSC_Adaptive**  
+   Ensambla:
+   - Geometría base
+   - Lattice
+   - Cooling
+   - Campos físicos
+
+6. **FFSCShowcase.Task_VisualizarMotorAdaptive**  
+   Devuelve un `Field3D` para el visor PicoGK.
+
+---
+
+## 🚀 Ejecución
+
+```csharp
+Library.Go(0.5f, FFSCShowcase.Task_VisualizarMotorAdaptive);
 
 The examples are organized into subfolders, according to the their category.
 
@@ -70,4 +101,33 @@ The examples are organized into subfolders, according to the their category.
     PicoGKBridge/
     Program.cs
     README.md
+# Motor FFSC — PicoGK + LEAP71
+
+Este repositorio contiene un motor de cohete **Full‑Flow Staged Combustion (FFSC)** modelado con:
+
+- **PicoGK** (geometría volumétrica)
+- **Tasks C#** (pipeline de diseño)
+- **LEAP71‑style pipeline** (tubería completa)
+- **Turbobomba paramétrica estilo Raptor**
+- **Lattice adaptativo TPMS ↔ cuasicristal**
+- **Cooling regenerativo adaptativo**
+- **Termoquímica + Bartz + espesor estructural**
+
+---
+
+## 📁 Estructura del repositorio
+
+EngineFFSC/ 
+Geometría/ 
+Física/ 
+TareasModelos/ 
+Utilidades/
+FFSC-PicoGK/ 
+MotorFFSC/ 
+Geometría/ 
+Física/ 
+Tareas/ 
+Turbobomba/ 
+Modelos/ 
+Utilidades/
 
