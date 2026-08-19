@@ -10,6 +10,16 @@ You can download this repository's source code to get an instant PicoGK-ready en
 
 For more information, see the [PicoGK documentation on PicoGK.org](https://picogk.org/doc/)
 
+# Topics
+1. ComputeThermoTask → Tad, Tg(z), Bartz hg(z), Qnorm(z)  
+2. ComputeThicknessTask → espesor estructural t(z)  
+3. TurbopumpDesignTask → r1, r2, h, U2, Cu2, ω  
+4. GenerateLatticeTask → Gyroid ↔ Quasicrystal  
+5. Task_AssemblyFFSC_Adaptive → ensamblado final  
+6. FFSCShowcase.Task_VisualizarMotorAdaptive → visor PicoGK  
+
+---
+
 # Tests/vscode
  FFSC-PicoGK/
     EngineFFSC/
@@ -55,7 +65,7 @@ For more information, see the [PicoGK documentation on PicoGK.org](https://picog
       ObjExporter.cs
       Program.cs
 
-# Running PicoGK
+# PicoGK
 
 Download this example repository, open in VisualStudio Code, and run the code `Program.cs`.
 1. **ComputeThermoTask**  
@@ -85,14 +95,14 @@ Download this example repository, open in VisualStudio Code, and run the code `P
 
 ---
 
-## 🚀 Ejecución
+## csharp tasks
 
 ```csharp
 Library.Go(0.5f, FFSCShowcase.Task_VisualizarMotorAdaptive);
 
 The examples are organized into subfolders, according to the their category.
 
-# examples
+## examples
   FFSC-PicoGK/
     EngineFFSC/
     Geometry/
@@ -102,6 +112,8 @@ The examples are organized into subfolders, according to the their category.
     Program.cs
     README.md
 # Motor FFSC — PicoGK + LEAP71
+
+## Turbopumps tests
 
 Este repositorio contiene un motor de cohete **Full‑Flow Staged Combustion (FFSC)** modelado con:
 
