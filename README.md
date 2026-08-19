@@ -15,3 +15,14 @@ For more information, see the [PicoGK documentation on PicoGK.org](https://picog
 Download this example repository, open in VisualStudio Code, and run the code `Program.cs`.
 
 The examples are organized into subfolders, according to the their category.
+
+# examples
+  FFSC-PicoGK/
+    EngineFFSC/
+    Geometry/
+    Physics/
+    Tasks/
+    PicoGKBridge/
+    Program.cs
+    README.md
+
